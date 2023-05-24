@@ -24,8 +24,10 @@
     "typescript": "^5.0.4"
   },
   "dependencies": {
+    "@fastify/cors": "^8.2.1",
     "@prisma/client": "^4.14.1",
     "fastify": "^4.17.0",
-    "uuid": "^9.0.0"
+    "uuid": "^9.0.0",
+    "zod": "^3.21.4"
   }
 }
