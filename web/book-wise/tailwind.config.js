@@ -7,6 +7,18 @@ module.exports = {
   ],
   theme: {
     extend: {
+      content: {
+        link: {
+          content: '',
+          background: 'linear-gradient(180deg, #7FD1CC 0%, #9694F5 100%)',
+          borderRadius: '999px',
+
+          marginRight: '1rem',
+          transition: 'all 0.1s ease-in',
+          height: '1.5rem',
+          width: '0.25rem',
+        },
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':

@@ -5,4 +5,20 @@
 body: {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  box-sizing: 'border-box';
+}
+
+.yes-before::before {
+  content: '';
+  background: linear-gradient(180deg, #7FD1CC 0%, #9694F5 100%);
+  border-radius: 999px;
+  marginRight: 1rem;
+  transition: 'all 0.1s ease-in';
+  height: 1.5rem;
+  width: 0.25rem;
+}
+
+.yes-before:not(:focus)::before {
+  content: '';
+  opacity: 0;
 }

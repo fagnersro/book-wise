@@ -29,7 +29,7 @@ export function Login() {
         </a>
         <a
           className="flex h-[4.5rem] items-center gap-5 rounded-lg bg-gray-600 pl-6 text-lg font-bold text-gray-200 duration-100 ease-in hover:bg-gray-500"
-          href="#"
+          href={`https://github.com/login/oauth/authorize?client_id=${process.env.NEXT_PUBLIC_GITHUB_CLIENT_ID}`}
         >
           <Image
             src={gitIcon}
@@ -42,7 +42,7 @@ export function Login() {
         </a>
         <a
           className="flex h-[4.5rem] items-center gap-5 rounded-lg bg-gray-600 pl-6 text-lg font-bold text-gray-200 duration-100 ease-in hover:bg-gray-500"
-          href="#"
+          href=""
         >
           <Image
             src={rocketIcon}
