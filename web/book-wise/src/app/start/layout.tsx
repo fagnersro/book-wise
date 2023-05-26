@@ -9,7 +9,7 @@ import { LogOut } from 'lucide-react'
 
 export default function startLayout({ children }: { children: ReactNode }) {
   return (
-    <div className="grid h-[62.5rem] w-screen grid-cols-[14.5rem__minmax(38rem,_1fr)_20.25rem] p-5">
+    <div className="grid h-[62.5rem] w-screen grid-cols-[14.5rem_auto] gap-[6rem] p-5">
       <aside className="flex h-full w-full flex-col items-center rounded-xl bg-gray-700">
         <Image
           className="mt-10"
