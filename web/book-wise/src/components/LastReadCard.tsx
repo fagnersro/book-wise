@@ -3,7 +3,7 @@ import { Star } from 'lucide-react'
 export default function LastReadCard() {
   return (
     <>
-      <div className="flex h-[12rem] w-[38rem] items-center justify-center gap-[1.5rem] rounded-md bg-gray-600">
+      <div className="flex h-[12rem] w-[38rem] cursor-pointer items-center justify-center gap-[1.5rem] rounded-md border-gray-500 bg-gray-600 hover:border-[2px]">
         <div className="h-[9.5rem] w-[6.75rem] rounded-[4px] bg-[url(../assets/books/entendendo-algoritmos.png)] bg-cover"></div>
 
         <div className="h-[9.125rem] w-[26.75rem]">

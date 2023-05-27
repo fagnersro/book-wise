@@ -1,5 +1,23 @@
-export default function Avatar() {
+import Image from 'next/image'
+
+interface AvatarProps {
+  width: number
+  height: number
+  source: string
+}
+
+export default function Avatar({ width, height, source }: AvatarProps) {
   return (
-    <div className="h-[2rem] w-[2rem] rounded-full border-2 border-gray-300 bg-[url(https://github.com/fagnersro.png)] bg-cover"></div>
+    <div className="h-[fit-content] w-[fit-content] rounded-full border-2 border-gray-300">
+      <Image
+        className="rounded-full"
+        src={source}
+        width={width}
+        height={height}
+        alt=""
+        quality={100}
+        priority
+      />
+    </div>
   )
 }

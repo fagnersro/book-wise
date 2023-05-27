@@ -23,7 +23,11 @@ export default function startLayout({ children }: { children: ReactNode }) {
         <SideNavigation />
 
         <div className="mt-[38.375rem] flex h-[2rem] w-[8.625rem] items-center justify-between">
-          <Avatar />
+          <Avatar
+            width={32}
+            height={32}
+            source="https://github.com/fagnersro.png"
+          />
           <span className="text-sm font-normal text-gray-200">Fagner</span>
           <button className="flex h-[1.75rem] w-[1.75rem] items-center justify-center rounded-md border-red-500 focus:border-[1px]">
             <LogOut className="text-red-500" />
