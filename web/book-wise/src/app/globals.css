@@ -22,3 +22,25 @@ body: {
   content: '';
   opacity: 0;
 }
+
+.DialogOverlay {
+  background: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  inset: 0;
+}
+
+
+.DialogContent {
+  border-radius: 6px;
+  box-shadow: -4px 0px 30px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 90vw;
+  max-width: 560px;
+  height: 100%;
+  padding: 25px;
+  animation: contentShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
+
+}
+

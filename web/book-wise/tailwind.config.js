@@ -51,11 +51,16 @@ module.exports = {
           600: '#252D4A',
           700: '#181C2A',
           800: '#0E1116',
+          900: 'rgba(0,0,0, 0.75)',
         },
 
         gradient: {
           horizontal: 'inear-gradient(90deg, #7FD1CC 0%, #9694F5 100%)',
           vertical: 'linear-gradient(180deg, #7FD1CC 0%, #9694F5 100%)',
+        },
+
+        cinz: {
+          100: 'box-shadow: hsl(206 22% 7% / 35%) 0px 10px 38px -10px, hsl(206 22% 7% / 20%) 0px 10px 20px -15px',
         },
       },
     },

@@ -2,6 +2,7 @@ import googleIcon from '../assets/iconGoogle.svg'
 import gitIcon from '../assets/iconGithub.svg'
 import rocketIcon from '../assets/iconRocket.svg'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export function Login() {
   return (
@@ -14,9 +15,9 @@ export function Login() {
       </div>
 
       <div className="w-100% flex h-[15.5rem] flex-col gap-4">
-        <a
+        <Link
           className="flex h-[4.5rem] items-center gap-5 rounded-lg bg-gray-600 pl-6 text-lg font-bold text-gray-200 duration-100 ease-in hover:bg-gray-500"
-          href="#"
+          href="/start"
         >
           <Image
             src={googleIcon}
@@ -26,7 +27,7 @@ export function Login() {
             alt="Icone de acesso ao GitHub"
           />
           Entrar com Google
-        </a>
+        </Link>
         <a
           className="flex h-[4.5rem] items-center gap-5 rounded-lg bg-gray-600 pl-6 text-lg font-bold text-gray-200 duration-100 ease-in hover:bg-gray-500"
           href={`https://github.com/login/oauth/authorize?client_id=${process.env.NEXT_PUBLIC_GITHUB_CLIENT_ID}`}
