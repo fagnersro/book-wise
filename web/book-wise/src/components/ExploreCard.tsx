@@ -43,7 +43,7 @@ export default function ExploreCard() {
               <span className="text-sm text-gray-200">Avaliações</span>
             </div>
 
-            <div className="mt-4 h-[53.375rem] w-full border-[0px] border-red-500">
+            <div className="mt-4 h-[53.375rem] w-full border-[1px] border-red-500">
               <LeaveNewComment />
             </div>
           </div>
