@@ -29,23 +29,27 @@ export default function ExploreCard() {
           </div>
         </div>
       </Dialog.Trigger>
-      <Dialog.Portal className="">
-        <Dialog.Overlay className="fixed inset-0 bg-gray-900" />
-        <Dialog.Content className="roundend-md fixed right-0 top-0 h-[64rem] w-full max-w-[41.25rem] overflow-scroll border-[0px] border-gray-50 bg-gray-800 shadow-2xl">
-          <div className="m-[0_auto] mb-4 mt-5 flex h-10 w-[35.25rem] items-center justify-end">
-            <Dialog.Close>
-              <X className="h-6 w-6" />
-            </Dialog.Close>
-          </div>
 
-          <div className="m-[0_auto] flex h-[auto] w-[35.25rem] flex-col border-[1px] border-gray-50">
+      <Dialog.Portal className="">
+        <Dialog.Overlay className="fixed inset-0" />
+        <Dialog.Content className="roundend-md fixed right-0 top-0 h-[80rem] w-full max-w-[41.25rem] overflow-y-auto border-[0px] border-gray-50 bg-gray-800 shadow-2xl">
+          <Dialog.Close className="m-[0_auto] mb-4 mt-5 flex h-10 w-[35.25rem] items-center justify-end">
+            <X className="h-6 w-6" />
+          </Dialog.Close>
+
+          <div className="m-[0_auto] h-[fit-content] w-[35.25rem] border-[0px] border-gray-50">
             <BookDetailsCard />
             <div className="mt-[2.5rem] flex h-[2.125rem] w-full items-center border-[0px] border-gray-50">
               <span className="text-sm text-gray-200">Avaliações</span>
             </div>
-
-            <div className="mt-4 flex h-[auto] w-full flex-col gap-3 border-[1px] border-red-500">
+            <div className="mt-4 flex h-[auto] w-full flex-col gap-3 overflow-y-auto border-[0px] border-red-500 ">
               <LeaveNewComment />
+              <CommentCard />
+              <CommentCard />
+              <CommentCard />
+              <CommentCard />
+              <CommentCard />
+              <CommentCard />
               <CommentCard />
               <CommentCard />
               <CommentCard />

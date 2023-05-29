@@ -6,7 +6,7 @@ import { ChevronRight, LineChart } from 'lucide-react'
 export default function NewStart() {
   return (
     <>
-      <section className="grid grid-cols-[38rem_auto] overflow-auto">
+      <section className="grid grid-cols-[38rem_auto]">
         <main className="mt-[3.25rem]">
           <header className="flex h-[2.125rem] w-[9.125rem] items-center">
             <LineChart className="mr-[0.75rem] h-[1.5rem] w-[1.5rem] text-green-100" />

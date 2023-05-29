@@ -5,7 +5,7 @@ import { Glasses } from 'lucide-react'
 
 export default function PageExplore() {
   return (
-    <section className="mt-[3.25rem] w-[56.25rem] ">
+    <section className="mt-[3.25rem] w-[56.25rem]">
       <header className="h-[7.625rem] w-[56.25rem]">
         <div className="flex h-[3rem] w-full items-start justify-between">
           <div className="flex h-[2.125rem] w-[9.125rem] items-center">

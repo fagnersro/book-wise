@@ -15,7 +15,7 @@ export default function RecentEstimateCard({
   subTitle,
 }: RecentEstimatedCardProps) {
   return (
-    <div className="mt-4 flex h-[17.5rem] w-full flex-col items-center justify-center gap-[2rem] rounded-lg bg-gray-700">
+    <div className="mb-5 mt-4 flex h-[17.5rem] w-full flex-col items-center justify-center gap-[2rem] rounded-lg bg-gray-700">
       <div className="flex h-[3rem] w-[35rem] gap-4">
         <Avatar
           width={40}
