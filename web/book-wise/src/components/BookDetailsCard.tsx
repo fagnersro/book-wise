@@ -1,4 +1,4 @@
-import { BookOpen, Flag } from 'lucide-react'
+import { BookOpen, Bookmark } from 'lucide-react'
 import AllStart from './AllStar'
 
 export default function BookDetailsCard() {
@@ -22,7 +22,7 @@ export default function BookDetailsCard() {
       </div>
       <div className="flex h-[5.75rem] w-[31.25rem] items-center border-t-[1px] border-gray-600">
         <div className="flex h-[2.75rem] w-[13.688rem] items-center justify-between">
-          <Flag className="h-5 w-5 text-green-100" />
+          <Bookmark className="h-5 w-5 text-green-100" />
           <div className="flex h-full w-[11rem] flex-col">
             <span className="text-sm text-gray-300">Categoria</span>
             <span className="text-base font-bold text-gray-200">

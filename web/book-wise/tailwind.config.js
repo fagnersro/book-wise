@@ -55,7 +55,7 @@ module.exports = {
         },
 
         gradient: {
-          horizontal: 'inear-gradient(90deg, #7FD1CC 0%, #9694F5 100%)',
+          horizontal: 'linear-gradient(180deg, #7FD1CC 0%, #9694F5 100%)',
           vertical: 'linear-gradient(180deg, #7FD1CC 0%, #9694F5 100%)',
         },
 

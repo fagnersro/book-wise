@@ -1,7 +1,7 @@
-import PopularBooks from '@/components/PopularBooks'
+import Analytical from '@/components/Analytical'
 import RatedBookCard from '@/components/RatedBookCard'
 import SearchRatedBook from '@/components/SearchRatedBook'
-import { ChevronRight, User2 } from 'lucide-react'
+import { User2 } from 'lucide-react'
 
 export default function PageProfile() {
   return (
@@ -22,26 +22,8 @@ export default function PageProfile() {
           <RatedBookCard />
         </div>
       </main>
-      <div className="m-[0_auto] mt-[7.875rem] h-[37.625rem] w-[20.25rem]">
-        <div className="flex h-[1.875rem] w-full items-center justify-between">
-          <span className="text-sm font-normal">Livros pupulares</span>
-          <div className="flex h-full w-[6.438rem] items-center justify-between rounded-md text-purple-100 hover:bg-purple-900">
-            <a
-              className="flex h-full w-full items-center justify-center gap-[0.5rem] text-sm font-bold"
-              href=""
-            >
-              Ver todas
-              <ChevronRight className="h-[1rem] w-[1rem]" />
-            </a>
-          </div>
-        </div>
 
-        <div className="mt-4 flex h-[34.75rem] w-full flex-col gap-3">
-          <PopularBooks />
-          <PopularBooks />
-          <PopularBooks />
-        </div>
-      </div>
+      <Analytical />
     </section>
   )
 }
