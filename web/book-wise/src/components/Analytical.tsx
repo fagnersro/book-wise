@@ -3,7 +3,7 @@ import Avatar from './Avatar'
 
 export default function Analytical() {
   return (
-    <div className="m-[0_auto] mt-[7.875rem] flex h-[37.625rem] w-[19.25rem] flex-col items-center border-l-[1px] border-gray-700">
+    <div className="ml-16 mt-[7.875rem] flex h-[37.625rem] w-[19.25rem] flex-col items-center border-l-[1px] border-gray-700">
       <div className="flex h-[9.375rem] w-full flex-col items-center justify-center gap-5">
         <Avatar
           width={72}

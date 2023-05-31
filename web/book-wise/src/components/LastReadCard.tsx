@@ -9,9 +9,7 @@ export default function LastReadCard() {
         <div className="h-[9.125rem] w-[26.75rem]">
           <div className="flex h-[4.875rem] flex-col gap-3 ">
             <div className="flex h-[1.375rem] items-center justify-between">
-              <span className="text-sm font-normal text-gray-100">
-                Há 2 dias
-              </span>
+              <span className="text-sm font-normal text-gray-100">há dias</span>
               <div className="flex h-full w-[6rem] items-center justify-between">
                 <Star className="h-[1rem] w-[1rem] text-purple-100" />
                 <Star className="h-[1rem] w-[1rem] text-purple-100" />

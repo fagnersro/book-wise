@@ -1,6 +1,8 @@
 import 'dotenv/config'
 import fastify from 'fastify'
 import cors from '@fastify/cors'
+import jwt from '@fastify/jwt'
+
 import { bookRoutes } from './routers/books'
 import { categorieRoutes } from './routers/categories'
 import { ratingRoutes } from './routers/ratings'
@@ -10,6 +12,10 @@ import { authRoutes } from './routers/auth'
 const app = fastify()
 app.register(cors, {
   origin: true,
+})
+
+app.register(jwt, {
+  secret: 'projectbookwise',
 })
 
 app.register(authRoutes)

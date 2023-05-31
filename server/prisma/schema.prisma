@@ -10,6 +10,8 @@ datasource db {
 model User {
   id         String   @id @default(uuid())
   name       String
+  github_id  Int?     @unique
+  login      String?
   avatar_url String?
   created_at DateTime @default(now())
 
@@ -74,7 +76,7 @@ model Account {
   user_id             String
   type                String
   provider            String
-  provider_account_id String
+  provider_account_id Int     @unique
   refresh_token       String?
   access_token        String?
   expires_at          Int?

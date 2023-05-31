@@ -8,7 +8,7 @@ interface AvatarProps {
 
 export default function Avatar({ width, height, source }: AvatarProps) {
   return (
-    <div className="h-[fit-content] w-[fit-content] rounded-full border-2 border-gray-300">
+    <div className="h-[fit-content] w-[fit-content] rounded-full border-2 border-gray-300 object-cover">
       <Image
         className="rounded-full"
         src={source}

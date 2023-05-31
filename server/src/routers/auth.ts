@@ -1,7 +1,7 @@
 import { FastifyInstance } from 'fastify'
 import axios from 'axios'
 import { z } from 'zod'
-// import { prisma } from '../lib/prisma'
+import { prisma } from '../lib/prisma'
 
 export async function authRoutes(app: FastifyInstance) {
   app.post('/register', async (request) => {
@@ -34,32 +34,45 @@ export async function authRoutes(app: FastifyInstance) {
       },
     })
 
-    const user = userResponse.data
+    const userSchema = z.object({
+      id: z.number(),
+      login: z.string(),
+      name: z.string(),
+      avatar_url: z.string().url(),
+    })
 
-    // const userSchema = z.object({
-    //   id: number(),
-    //   login: string(),
-    //   name: string(),
-    //   avatar_url: z.string().url(),
-    // })
+    const userInfo = userSchema.parse(userResponse.data)
 
-    // const userInfo = userSchema.parse(userResponse.data)
+    let user = await prisma.user.findUnique({
+      where: {
+        github_id: userInfo.id,
+      },
+    })
 
-    // let user = await prisma.user.findUnique({
-    //   where: {
-    //     github_id: userInfo.id,
-    //   },
-    // })
+    if (!user) {
+      user = await prisma.user.create({
+        data: {
+          github_id: userInfo.id,
+          login: userInfo.login,
+          name: userInfo.name,
+          avatar_url: userInfo.avatar_url,
+        },
+      })
+    }
 
-    // if (!user) {
-    //   user = await prisma.user.create({
-    //     name: userInfo.name,
-    //     avatar_url: userInfo.avatar_url,
-    //   })
-    // }
+    const token = app.jwt.sign(
+      {
+        name: user.name,
+        avatar_url: user.avatar_url,
+      },
+      {
+        sub: user.id,
+        expiresIn: '15 days',
+      },
+    )
 
     return {
-      user,
+      token,
     }
   })
 }

@@ -1,9 +1,10 @@
 import LastReadCard from '@/components/LastReadCard'
 import PopularBooks from '@/components/PopularBooks'
 import RecentEstimateCard from '@/components/RecentEstimateCard'
+
 import { ChevronRight, LineChart } from 'lucide-react'
 
-export default function NewStart() {
+export default async function NewStart() {
   return (
     <>
       <section className="grid grid-cols-[38rem_auto]">
@@ -28,7 +29,7 @@ export default function NewStart() {
                 </a>
               </div>
             </div>
-            <div className="flex h-full w-full items-center justify-center">
+            <div className="flex h-auto w-full flex-col items-center justify-center">
               <LastReadCard />
             </div>
           </div>
@@ -39,21 +40,7 @@ export default function NewStart() {
                 Avaliações mais recentes
               </span>
             </div>
-            <RecentEstimateCard
-              book=""
-              title="O Hobbit"
-              subTitle="J.R.R. Tolkien"
-            />
-            <RecentEstimateCard
-              book=""
-              title="O guia do mochileiro das galáxias"
-              subTitle="Douglas Adams"
-            />
-            <RecentEstimateCard
-              book=""
-              title="14 Hábitos de Desenvolvedores Alta..."
-              subTitle="Zeno Rocha"
-            />
+            <RecentEstimateCard />
           </div>
         </main>
         <div className="m-[0_auto] mt-[7.875rem] h-[37.625rem] w-[20.25rem]">

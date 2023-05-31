@@ -31,7 +31,7 @@ export default function ExploreCard() {
       </Dialog.Trigger>
 
       <Dialog.Portal className="">
-        <Dialog.Overlay className="fixed inset-0" />
+        <Dialog.Overlay className="fixed inset-0 bg-gray-900" />
         <Dialog.Content className="roundend-md fixed right-0 top-0 h-[80rem] w-full max-w-[41.25rem] overflow-y-auto border-[0px] border-gray-50 bg-gray-800 shadow-2xl">
           <Dialog.Close className="m-[0_auto] mb-4 mt-5 flex h-10 w-[35.25rem] items-center justify-end">
             <X className="h-6 w-6" />

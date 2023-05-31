@@ -4,7 +4,11 @@ import { z } from 'zod'
 
 export async function bookRoutes(app: FastifyInstance) {
   app.get('/books', async () => {
-    const books = await prisma.book.findMany()
+    const books = await prisma.book.findMany({
+      include: {
+        ratings: true,
+      },
+    })
 
     return books
   })

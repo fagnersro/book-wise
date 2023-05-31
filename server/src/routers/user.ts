@@ -4,7 +4,11 @@ import { z } from 'zod'
 
 export async function usersRoutes(app: FastifyInstance) {
   app.get('/users', async () => {
-    const users = await prisma.user.findMany()
+    const users = await prisma.user.findMany({
+      include: {
+        ratings: true,
+      },
+    })
 
     return users
   })
