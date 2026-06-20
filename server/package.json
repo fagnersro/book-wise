@@ -26,10 +26,10 @@
   },
   "dependencies": {
     "@fastify/cors": "^8.2.1",
-    "@fastify/jwt": "^7.0.0",
+    "@fastify/jwt": "^7.2.4",
     "@prisma/client": "^4.15.0",
-    "axios": "^1.4.0",
-    "fastify": "^4.17.0",
+    "axios": "^1.6.8",
+    "fastify": "^4.24.1",
     "uuid": "^9.0.0",
     "zod": "^3.21.4"
   }
